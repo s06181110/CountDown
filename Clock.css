@@ -1,0 +1,34 @@
+
+#sub-title {
+	color: white;
+	font-size: 3vw;
+	display: fixed;
+}
+
+.clock {
+	background-color: black;
+	color: red;
+	font-weight: bold;
+}
+
+#clock-wrapper {
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#clock {
+	font-size: 8vw;
+}
+
+#setting {
+	text-align: center;
+}
+
+.form-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}

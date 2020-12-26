@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./Clock.css">
+		<script src="./Clock.js"></script>
+		<title>時計</title>
+	</head>
+	<body id="TopOfBody">
+		<div id="setting">
+			<h1 class="title">カウントダウンの設定</h1>
+			<div class="form-content">
+				<label for="purpose">なんのカウントダウン？ </label>
+				&nbsp;<input type="text" name="purpose" id="purpose" value="卒論提出" required>
+			</div>
+			<div class="form-content">
+				<label for="target">いつまで？</label>
+				&nbsp;<input type="datetime-local" name="target" id="target" value="2021-01-07T00:00:00" >
+			</div>
+			<div class="form-content">
+				<button onclick="clockFromSetting();">はじめる</button>
+			</div>
+		</div>
+		<div id="countdown" style="display: none;">
+			<p id="sub-title"></p>
+			<div id="clock-wrapper">
+				<p id="clock"></p>
+			</div>
+		</div>
+	</body>
+</html>
